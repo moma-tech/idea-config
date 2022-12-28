@@ -1,0 +1,21 @@
+<templateSet group="user">
+  <template name="cc" value="*&#10; * $name$&#10; * &lt;p&gt;TODO&#10; * @version 1.0&#10; * @author Created by $user$ at $date$.&#10; **/" shortcut="ENTER" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="true" />
+    <variable name="user" expression="user()" defaultValue="" alwaysStopAt="true" />
+    <variable name="date" expression="time()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="mc" value="*&#10; * description $end$&#10;$param$&#10; * @return $return$&#10; * @author Created by $user$ &#10; * @since $date$ $time$&#10; **/" shortcut="ENTER" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="user" expression="user()" defaultValue="jipeng dong" alwaysStopAt="true" />
+    <variable name="end" expression="methodName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="param" expression="groovyScript(&quot;def result=' *'; def params=\&quot;${_1}\&quot;.replaceAll('[\\\\[|\\\\]|\\\\s]', '').split(',').toList();if(params[0].trim().equals('')) return ''; for(i = 0; i &lt; params.size(); i++) {result+= '\\n * @param ' + params[i] + ' ' + params[i]}; return result&quot;, methodParameters())" defaultValue="" alwaysStopAt="true" />
+    <variable name="return" expression="methodReturnType()" defaultValue="" alwaysStopAt="true" />
+    <variable name="date" expression="date()" defaultValue="" alwaysStopAt="true" />
+    <variable name="time" expression="time()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+</templateSet>
