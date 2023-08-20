@@ -1,6 +1,6 @@
 <application>
   <component name="NotificationConfiguration">
-    <notification groupId="google-java-format parsing error" />
+    <notification groupId="google-java-format parsing error" displayType="NONE" shouldLog="false" />
     <notification groupId="Language Plugins Notifications" displayType="NONE" shouldLog="false" />
     <notification groupId="Plugins Suggestion" displayType="NONE" shouldLog="false" />
   </component>
