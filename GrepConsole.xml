@@ -25,7 +25,7 @@
           <option name="models">
             <list>
               <GrepModel>
-                <option name="expression" value="" />
+                <option name="expression" value=" https://open.feishu.cn/open-apis/bot/v2/hook/ed09e72b-bb99-4c81-8ed8-3a4756ab2b9d" />
               </GrepModel>
             </list>
           </option>
@@ -34,7 +34,7 @@
           <option name="models">
             <list>
               <GrepModel>
-                <option name="expression" value=" https://open.feishu.cn/open-apis/bot/v2/hook/ed09e72b-bb99-4c81-8ed8-3a4756ab2b9d" />
+                <option name="expression" value="" />
               </GrepModel>
             </list>
           </option>
